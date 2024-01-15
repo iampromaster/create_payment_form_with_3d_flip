@@ -1,0 +1,216 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(43, 85, 255);
+}
+
+.payment-section {
+  height: 620px;
+  width: 1100px;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: black;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+}
+.col-1 {
+  padding: 3rem 3rem;
+}
+h2 {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 800;
+}
+.input-group-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.input-group-1 input {
+  width: 450px;
+  height: 60px;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  background-color: rgb(235, 235, 235);
+}
+input::placeholder {
+  text-align: center;
+  font-size: 16px;
+}
+.input-group-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.input-group-2 input {
+  width: 215px;
+  height: 60px;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgb(235, 235, 235);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.col-1 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.save-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+form button {
+  padding: 15px 170px;
+  border-radius: 0.5rem;
+  font-size: 24px;
+  text-wrap: nowrap;
+  text-align: center;
+  font-weight: 600;
+  border: 3px solid transparent;
+  background-color: rgb(43, 85, 255);
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: transparent;
+  color: rgb(43, 85, 255);
+  border: 3px solid rgb(43, 85, 255);
+}
+from span {
+  font-size: 14px;
+  text-align: center;
+}
+form span a {
+  text-decoration: none;
+  color: rgb(43, 85, 255);
+}
+form span a:hover {
+  text-decoration: underline;
+}
+.col-2 {
+  display: grid;
+  place-items: center;
+}
+.col-2 .card {
+  position: absolute;
+  width: 400px;
+  height: 230px;
+  background: rgb(30, 30, 30);
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.3rem;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.card .row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-1 span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 20px;
+}
+.card .row-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.card .row-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 50px;
+}
+.chip {
+  width: 60px;
+}
+
+.card-backside {
+  width: 400px;
+  height: 230px;
+  background: rgb(30, 30, 30);
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.3rem;
+  gap: 1rem;
+  cursor: pointer;
+  transform: rotateY(180deg);
+  z-index: 5;
+  backface-visibility: hidden;
+}
+.card-backside h5 {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+.black-strip {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+.cvv {
+  width: 70%;
+  padding: 0.3rem 0;
+  background-color: rgb(208, 208, 208);
+  border-radius: 5px;
+  margin-top: 3.2rem;
+  overflow: hidden;
+  text-align: right;
+}
+.cvv span {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+}
+.card-backside p {
+  font-size: 10px;
+}
+.card-wrapper {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: 0.6s;
+}
+.card-wrapper:hover {
+  transform: rotateY(180deg);
+}
